@@ -1,7 +1,5 @@
 # Intelligent Cloud Resource Optimizer  
 ### *Open FinOps Template for Cloud Cost Efficiency*  
-![workflow](https://github.com/<your-username>/cloud-resource-optimizer/actions/workflows/ci.yml/badge.svg)
-
 ---
 
 ## Tech Stack 
