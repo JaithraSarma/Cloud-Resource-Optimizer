@@ -27,7 +27,7 @@ Built using **Terraform, Python, and GitHub Actions**, it demonstrates how busin
 </div>
 
 ## Running the Simulation 
-```mermaid
+```bash
 git clone https://github.com/JaithraSarma/cloud-resource-optimizer.git
 
 cd cloud-resource-optimizer
