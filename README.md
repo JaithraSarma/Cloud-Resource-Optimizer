@@ -42,10 +42,28 @@ python scripts/optimizer.py
 ## Quick Start (For Implementation Purposes)
 
 ### 1. Fork this repository 
-Adapt it for your cloud provider (Azure, AWS, or GCP).
+Adapt it for your cloud provider (Azure, AWS, or GCP). Your DevOps team can customize the Terraform configuration `(terraform/main.tf)` for Azure, AWS, or GCP.
 
-### 2. Configure credentials by 
+```bash
+git clone https://github.com/<your-org>/cloud-resource-optimizer.git
+cd cloud-resource-optimizer
+```
+
+### 2. Create a Service Principal or Access Key
 Replace simulation logic with your provider’s SDK (Azure SDK, boto3, or GCP SDK) and store keys securely as GitHub Secrets or via a Vault.
+Example for Azure is as below:
+```bash
+az ad sp create-for-rbac \
+  --name "cloud-optimizer" \
+  --role Contributor \
+  --scopes /subscriptions/<YOUR_SUBSCRIPTION_ID> \
+  --sdk-auth
+```
+Copy these values:
+- tenantId
+- subscriptionId
+- clientId
+- clientSecret
 
 ### 3. Define Policies
 In `scripts/optimizer.py`, tune thresholds:
