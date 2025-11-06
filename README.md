@@ -69,10 +69,10 @@ cost_before.json
 actions.json
 cost_after.json
 ```
+---
 
 ## Summary
 An end-to-end FinOps automation pipeline showcasing cloud cost optimization concepts using DevOps best practices — designed to reflect real-world cloud efficiency strategies in a safe, simulated environment.
 
----
 
 
